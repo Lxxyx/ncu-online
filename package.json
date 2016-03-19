@@ -1,6 +1,6 @@
 {
   "name": "ncu-online",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "NCU 网络教学平台助手",
   "main": "index.js",
   "scripts": {
