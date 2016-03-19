@@ -7,6 +7,7 @@ npm install request --save
 ```
 ### 使用：
 ```javascript
+var request = require('request')
 var nol = require('ncu-online')
 // 函数内填JSON文件地址
 nol.getLogin({
@@ -20,7 +21,6 @@ nol.getLogin({
       // 这个进行获取到页面的操作
       // 需要有使用request的基础
     })  
-    // data为request的option，已包含登录后的cookies
   })
   .catch(err => {
     //处理错误
