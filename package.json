@@ -12,7 +12,8 @@
     "cheerio": "^0.20.0",
     "request": "^2.69.0",
     "iconv-lite": "^0.4.13",
-    "request-promise": "^2.0.1"
+    "request-promise": "^2.0.1",
+    "babel-polyfill": "^6.7.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
