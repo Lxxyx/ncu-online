@@ -19,6 +19,11 @@ var getSession = {
 };
 
 var getLogin = function getLogin() {
+  var _ref = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+  var username = _ref.username;
+  var password = _ref.password;
+
   return new Promise(function (reslove, reject) {
     (0, _request2.default)(getSession, function () {
       var cookies = j.getCookieString(getSession.uri);
@@ -42,9 +47,9 @@ var getLogin = function getLogin() {
         },
         form: {
           // 填你的账号
-          "IPT_LOGINUSERNAME": '',
+          "IPT_LOGINUSERNAME": username,
           // 填你的密码
-          "IPT_LOGINPASSWORD": ''
+          "IPT_LOGINPASSWORD": password
         }
       };
 

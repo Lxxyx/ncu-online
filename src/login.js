@@ -7,7 +7,7 @@ let getSession = {
   jar: j
 }
 
-let getLogin = function () {
+let getLogin = function ({ username, password } = {}) {
   return new Promise(function (reslove, reject) {
     request(getSession, () => {
       let cookies = j.getCookieString(getSession.uri);
@@ -31,9 +31,9 @@ let getLogin = function () {
         },
         form: {
           // 填你的账号
-          "IPT_LOGINUSERNAME": '',
+          "IPT_LOGINUSERNAME": username,
           // 填你的密码
-          "IPT_LOGINPASSWORD": ''
+          "IPT_LOGINPASSWORD": password
         }
       };
 
