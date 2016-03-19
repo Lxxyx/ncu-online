@@ -1,1 +1,1 @@
-module.exports = './dist/login.js'
+module.exports = require('./dist/login.js')
